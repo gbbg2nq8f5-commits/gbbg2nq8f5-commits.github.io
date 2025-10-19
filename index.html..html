@@ -1,0 +1,27 @@
+      display: block;
+    }
+    p {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <!-- Seite 1 -->
+  <div id="page1" class="page active" onclick="goToPage2()">
+    <p>curls.</p>
+  </div>
+
+  <!-- Seite 2 -->
+  <div id="page2" class="page">
+    <p>Curls describe strands of hair that form a spiral or wave shape.</p>
+    <p>They are common among people from the Mediterranean region.</p>
+  </div>
+
+  <script>
+    function goToPage2() {
+      document.getElementById("page1").classList.remove("active");
+      document.getElementById("page2").classList.add("active");
+    }
+  </script>
+</body>
+</html>
